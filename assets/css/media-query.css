@@ -1,0 +1,24 @@
+/* mobile devices */
+
+@media screen and (max-width: 376px) {
+    
+
+
+    /* login page */
+    .login h2 {
+        font-size: 1.5rem;
+    }
+
+    .login .login-form {
+        padding: 1.5rem !important;
+    }
+
+    /* signup page */
+    .signup h2 {
+        font-size: 1.5rem;
+    }
+
+    .signup .signup-form {
+        padding: 1.5rem !important;
+    }
+}

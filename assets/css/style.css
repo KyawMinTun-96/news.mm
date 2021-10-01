@@ -1,0 +1,25 @@
+/*----------------my nav---------------*/
+.my-nav {
+    background-color: var(--bg-color1);
+}
+
+.btn-login {
+    padding: 8px 15px !important;
+    color: var(--ft-color2);
+}
+
+
+
+
+/*---------------login page----------------*/
+.login-form {
+    width: 400px;
+    background-color: var(--bg-color3);
+}
+
+
+/*---------------signup page----------------*/
+.signup-form {
+    width: 400px;
+    background-color: var(--bg-color3);
+}
