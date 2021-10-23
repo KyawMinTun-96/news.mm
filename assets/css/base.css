@@ -30,6 +30,7 @@
 body {
     font-family: var(--ft-family1);
     background-color: var(--bg-color2);
+    scroll-behavior: smooth;
 }
 
 a {
@@ -44,7 +45,42 @@ ul, ol {
 
 
 
+/*-------------- webkit scrollbar --------------*/
+:root{
+    scrollbar-color: var(--bg-color1) #dde5ee !important;
+    scrollbar-width: thin !important;
+}
 
+::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: #dde5ee;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    background-color: var(--bg-color1);
+}
+
+::-webkit-scrollbar:horizontal{
+    height: 8px;
+    background-color: #dde5ee;
+}
+
+::-webkit-scrollbar-thumb:horizontal{
+    background: var(--bg-color1);
+    border-radius: 10px;    
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
 
 
 

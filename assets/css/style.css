@@ -23,3 +23,35 @@
     width: 400px;
     background-color: var(--bg-color3);
 }
+
+
+
+
+
+/*--------------- latest_news -------------*/
+.latest_news {
+
+}
+
+.news_card {
+    box-shadow:0 0 4px 0px rgba(0,0,0,0.3);
+}
+
+.news_card:hover {
+    cursor: pointer;
+}
+
+.news_title {
+    font-family: sans-serif;
+}
+
+.news_date {
+    font-size: 12px; 
+    font-family: monospace; 
+    color: gray;
+}
+
+.news_btn {
+    font-size: 11px; 
+    color: #fff;
+}
