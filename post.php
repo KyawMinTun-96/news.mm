@@ -9,16 +9,23 @@
 
         $title = $_POST['title'];
         $content = $_POST['content'];
-        $img = $_FILES['files'];
+        $postImg = $_FILES['files'];
         $post_date = $_POST['post_date'];
-
-        // $imageLink = mt_rand(time(), time()) + mt_rand(time(), time()) . "_" . $img['name'];
-        // move_uploaded_file($img['tmp_name'], "assets/uploads/". $imageLink);
+        $img = [];
 
 
-        
-        var_dump($img['name']);
-        //echo $title . "<br/>" . $content . "<br/>" . $post_date . "<br/>" . var_dump($imageLink);
+        foreach($postImg['tmp_name'] as $key => $val) {
+            
+            $imageLink = mt_rand(time(), time()) + mt_rand(time(), time()) . "_" . $postImg['name'][$key];
+            move_uploaded_file($postImg['tmp_name'][$key], "assets/uploads/". $imageLink);
+            array_push($img, $imageLink);
+
+        }
+
+        $ans = insertPost($title, $content, serialize($img), $post_date, 'post');
+
+        echo $ans;
+
     }
 ?>
 
@@ -27,7 +34,7 @@
         <div class="row justify-content-center">
             <div class="col-md-6 border border-danger rounded bg-white p-5 my-5">
 
-                <form action="#" method="post" enctype="multipart/form-data">
+                <form action="post.php" method="post" enctype="multipart/form-data">
                     <legend class="text-center text-primary">Add News</legend>
 
                     <div class="mb-3">

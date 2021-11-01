@@ -132,7 +132,7 @@
 
     function getResult($data) {
 
-        return  "<pre>" . var_dump($data) . "</pre>";
+        echo "<pre>" . print_r($data, true) . "</pre>";
 
     }
 

@@ -22,3 +22,16 @@
         padding: 1.5rem !important;
     }
 }
+
+
+
+@media screen and (max-width: 769px) {
+    
+    .news_image {
+        height: 6rem;
+    }
+
+    .news_date {
+        font-size: 10px;
+    }
+}
